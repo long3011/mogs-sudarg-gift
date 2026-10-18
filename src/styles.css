@@ -62,7 +62,7 @@ button { font: inherit; cursor: pointer; }
 .image-wrap, .image-modal-card > img { overflow: hidden; background: var(--purple-100); }
 .image-wrap { width: 100%; aspect-ratio: 1.07; padding: 0; border: 2px solid transparent; display: block; border-radius: 18px 18px 18px 4px; }
 .image-wrap img, .image-modal-card > img, .mini-card img, .completed-image img { width: 100%; display: block; }
-.image-wrap img { height: 100%; object-fit: cover; transition: transform .5s; }
+.image-wrap img { height: 100%; object-fit: cover; transition: transform .5s; cursor: zoom-in; }
 .memory-card:hover .image-wrap { border-color: var(--green-500); }
 .memory-card:hover img { transform: scale(1.04); }
 .puzzle-cta, .modal-puzzle-cta { padding: 10px 12px; border-radius: 8px; background: var(--green-700); color: var(--purple-900); font-size: 10px; font-weight: 600; }
@@ -72,9 +72,9 @@ button { font: inherit; cursor: pointer; }
 .card-copy p, .modal-copy p, .upload-box p, .piece-count-help, .pile-tip { margin: 0; color: var(--muted); font-size: 11px; }
 .card-number { padding-top: 3px; color: var(--green-700); }
 
-.image-modal { position: fixed; inset: 0; z-index: 50; display: flex; align-items: center; justify-content: center; padding: 30px; background: rgba(52,32,77,.8); }
-.image-modal-card { position: relative; width: min(900px, 100%); max-height: 92vh; overflow: auto; padding: 14px; border: 3px solid var(--green-500); border-radius: 22px; background: var(--cream); box-shadow: 0 20px 60px rgba(0,0,0,.4); }
-.image-modal-card > img { max-height: 70vh; object-fit: contain; border-radius: 12px; }
+.image-modal { position: fixed; inset: 0; z-index: 50; display: flex; align-items: center; justify-content: center; padding: 18px; background: rgba(10,5,20,.9); }
+.image-modal-card { position: relative; width: min(1200px, 100%); max-height: 96vh; overflow: auto; padding: 14px; border: 3px solid var(--green-500); border-radius: 22px; background: var(--cream); box-shadow: 0 20px 60px rgba(0,0,0,.4); }
+.image-modal-card > img { max-height: 82vh; object-fit: contain; border-radius: 12px; cursor: zoom-out; }
 .modal-close { position: absolute; z-index: 1; top: 24px; right: 24px; width: 32px; height: 32px; border: 0; border-radius: 50%; background: var(--green-700); color: var(--purple-900); font-size: 24px; line-height: 1; }
 .modal-copy { display: flex; align-items: center; justify-content: space-between; gap: 20px; padding: 18px 5px 4px; }
 .modal-copy h3 { margin: 0 0 4px; font-size: 22px; }
