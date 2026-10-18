@@ -19,7 +19,7 @@ export function PuzzleSection({ state, actions }) {
     }
   }
   return <section className="puzzle-section">
-    <div className="section-heading"><div><span className="kicker">Your birthday gift</span><h2>Piece together a wish.</h2></div><p>Choose a memory, set the difficulty,<br />then unwrap the picture piece by piece.</p></div>
+    <div className="section-heading"><div><span className="kicker">Your birthday gift</span><h2>Piece together a gift.</h2></div><p>Choose a memory, set the difficulty,<br />then reveal the picture piece by piece.</p></div>
     <div className={`puzzle-layout ${isFullscreen ? 'puzzle-fullscreen' : ''}`} ref={puzzleLayoutRef}><div className="puzzle-panel">
       <button className="fullscreen-button" onClick={toggleFullscreen}>{isFullscreen ? 'Exit fullscreen' : 'Fullscreen'} <span>{isFullscreen ? '↙' : '↗'}</span></button>
       <div className="puzzle-meta"><span>{image.title}</span><span>{moves} {moves === 1 ? 'piece' : 'pieces'} snapped</span></div>

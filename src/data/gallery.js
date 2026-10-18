@@ -21,11 +21,12 @@ export const gallery = [
   { id: 'mogs-birthday', title: 'Mogs Birthday art', message: 'A birthday celebration by Miti.', image: mogsBirthday },
   { id: 'mohawgs-by-rax', title: 'Mohawgs', message: 'A fanart made by Rax.', image: mohawgsbyrax },
   { id: 'twitch-kiddo-banner', title: 'Twitch Banner', message: 'A banner for Mogs Twitch channel by Kiddo.', image: twitchkiddobanner },
+  { id: 'magic-duo', title: 'Magic Duo', message: 'Kiddo\'s birthday gift.', image: Magic_Duo }
 ]
 
 // Replace this image URL to change the puzzle image used when the app opens.
 export const puzzleImage = { 
   id: 'magic-duo', 
   title: 'Magic Duo', 
-  message: 'A magical moment with the Magic Duo.', 
+  message: 'Kiddo\'s birthday gift.', 
   image: Magic_Duo }
